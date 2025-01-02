@@ -1,0 +1,18 @@
+.nav-bar {
+    background: #404040;
+    padding: 10px 0;
+    ul {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+} 
