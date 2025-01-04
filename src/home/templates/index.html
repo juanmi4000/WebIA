@@ -1,19 +1,38 @@
+{% extends 'layouts/base.html' %}
+
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi web IA</title>
-    <link rel="stylesheet" href="{% static 'css/basic_conf.css' %}">
+{% block title %} Portfolio de Inteligencia Artificial {% endblock %}
+
+{% block styles %}
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    <link rel="stylesheet" href="{% static 'css/nav-bar.css' %}">
-</head>
-<body>
-    {% include 'layouts/nav_bar.html' %}
-    <main>
-        <h1>Página principal</h1>
-    </main>
-</body>
-</html>
+{% endblock %}
+
+{% block content %}   
+    <article>
+        <h1>Portfolio de Inteligencia Artificial</h1>
+        <p>Bienvenid@ a mi portfolio de IA. Aquí encontrarás los proyectos y modelos que he desarrollado durante mi curso de especialización en IA y Big Data.</p>
+        <a href="">Ver modelos de IA</a>
+    </article>
+    <article>
+        <h1>Sobre mi</h1>
+        <p>Soy un apasionado de la Inteligencia Artificial y el Big Data, con experiencia en el desarrollo de aplicaciones web y en el desarrollo de modelos de aprendizaje automático y análisis de datos. Mi objetivo es crear soluciones innovadoras que aprovechen el poder de la IA para resolver problemas del mundo real.</p>
+    </article>
+    <article>
+        <h1>Habilidades</h1>
+        <ul>
+            <li>Desarrollo de aplicaciones web</li>
+            <li>Desarrollo de modelos de aprendizaje automático</li>
+            <li>Análisis de datos</li>
+            <li>Visualización de datos</li>
+            <li>Programación en Python</li>
+            <li>Programación en R</li>
+            <li>SQL</li>
+        </ul>
+    </article>
+    <article>
+        <h1>Contacto</h1>
+        <p>¿Interesado en saber más?</p>
+        <p>Puedes contactarme a traves de: email o linkedin</p>
+    </article>
+{% endblock %}

@@ -1,19 +1,13 @@
-{% load static %}
+{% extends 'layouts/base.html' %}
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi web IA</title>
-    <link rel="stylesheet" href="{% static 'css/basic_conf.css' %}">
+{% load static%}
+
+{% block title %} Modelos de IA entrenados {% endblock %}
+
+{% block styles %}
     <link rel="stylesheet" href="{% static 'css/trained_ia_models.css' %}">
-    <link rel="stylesheet" href="{% static 'css/nav-bar.css' %}">
-</head>
-<body>
-    {% include 'layouts/nav_bar.html' %}
-    <main>
-        <h1>Próximamente</h1>
-    </main>
-</body>
-</html>
+{% endblock %}
+
+{% block content %}
+    <h1>Próximamente</h1>
+{% endblock %}
