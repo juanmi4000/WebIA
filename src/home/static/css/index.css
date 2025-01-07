@@ -1,0 +1,71 @@
+main {
+    width: 70%;
+    margin: 0 auto;
+    article {
+        margin: 10% 0; 
+
+        h1 {
+            text-align: center;
+        }
+
+        &:first-child {
+            text-align: center;
+        }
+
+        &:nth-child(2) > p {
+            background-color: #303030;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        &:last-child > div {
+            padding: 0.7rem;
+            border-radius: 1rem;
+            text-align: center;
+            background-color: #303030;
+            a {
+                color: whitesmoke;
+            }
+        }
+
+    }
+    
+}
+
+.enlace-boton {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.habilidades {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    li {
+        padding: 1rem;
+        margin: 1rem;
+        background-color: #303030;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    .habilidades {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
