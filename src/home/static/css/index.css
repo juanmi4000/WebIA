@@ -23,8 +23,13 @@ main {
             border-radius: 1rem;
             text-align: center;
             background-color: #303030;
+
+            span {
+                text-decoration: underline;
+            }
+
             a {
-                color: whitesmoke;
+                color: rgb(158, 185, 251);
             }
         }
 
