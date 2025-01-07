@@ -12,7 +12,7 @@
     <article>
         <h1>Portfolio de Inteligencia Artificial</h1>
         <p>Bienvenid@ a mi portfolio de IA. Aquí encontrarás los proyectos y modelos que he desarrollado durante mi curso de especialización en IA y Big Data.</p>
-        <a href="">Ver modelos de IA</a>
+        <a class="enlace-boton" href="{% url 'trained-ia-models' %}">Ver modelos de IA</a>
     </article>
     <article>
         <h1>Sobre mi</h1>
@@ -20,19 +20,17 @@
     </article>
     <article>
         <h1>Habilidades</h1>
-        <ul>
-            <li>Desarrollo de aplicaciones web</li>
-            <li>Desarrollo de modelos de aprendizaje automático</li>
-            <li>Análisis de datos</li>
-            <li>Visualización de datos</li>
-            <li>Programación en Python</li>
-            <li>Programación en R</li>
-            <li>SQL</li>
+        <ul class="habilidades">
+            {% for habilidad in habilidades %}
+                <li>{{ habilidad }}</li>
+            {% endfor %}
         </ul>
     </article>
     <article>
         <h1>Contacto</h1>
-        <p>¿Interesado en saber más?</p>
-        <p>Puedes contactarme a traves de: email o linkedin</p>
+        <div>
+            <p>¿Interesado en saber más?</p>
+            <p>Puedes contactarme a traves del correo juanmi_4000@hotmail.es o mediante <a target="_blank" href="https://www.linkedin.com/in/juan-manuel-garc%C3%ADa-moyano-4ba438306/">LinkedIn</a></p>
+        </div>
     </article>
 {% endblock %}
