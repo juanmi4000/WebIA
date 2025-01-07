@@ -1,18 +1,45 @@
+/* Estilo del menú */
 .nav-bar {
-    background: #404040;
-    padding: 10px 0;
+    display: flex;
+    gap: 20px;
+    height: 4rem;
+    justify-content: center;
+    background-color: #303030;
+
     ul {
         display: flex;
-        justify-content: center;
-        gap: 3rem;
-    }
-
-    li {
+        align-items: center;
+        margin: 0 auto;
         list-style: none;
-    }
+        gap: 2rem;
 
-    a {
-        color: whitesmoke;
-        text-decoration: none;
+        li {
+            position: relative;
+
+            a {
+                text-decoration: none;
+                color: whitesmoke;
+                transition: color 0.3s ease;
+            }
+
+            a::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background-color: #a4a4a4;
+                transition: width 0.3s ease;
+            }
+
+            a:hover {
+                color: #a4a4a4; 
+            }
+
+            a:hover::after {
+                width: 100%;
+            }
+        }
     }
-} 
+}
